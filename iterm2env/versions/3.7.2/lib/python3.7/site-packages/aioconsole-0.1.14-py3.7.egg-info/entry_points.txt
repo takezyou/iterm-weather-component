@@ -1,0 +1,3 @@
+[console_scripts]
+apython = aioconsole:run_apython
+

@@ -1,0 +1,5 @@
+#!/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/bin/python3.7
+
+import pydoc
+if __name__ == '__main__':
+    pydoc.cli()

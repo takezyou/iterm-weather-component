@@ -1,0 +1,5 @@
+#!/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/bin/python3.7
+
+from idlelib.pyshell import main
+if __name__ == '__main__':
+    main()
