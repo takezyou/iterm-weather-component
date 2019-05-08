@@ -5,4 +5,5 @@ Weather status with iTerm2 component
 
 # Configuration
 
-![configuration](https://github.com/takezyou/iterm-weather-component/blob/master/screenshots/configuration.png)
+<img src="https://github.com/takezyou/iterm-weather-component/blob/master/screenshots/configuration.png" width=50%>
+
