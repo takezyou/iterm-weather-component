@@ -27,6 +27,9 @@ After restarting iTerm2, you can choose the weather component in preferences: **
 If you want other information please check
 
 **Example UI**
+
 ![ui1.png](https://github.com/takezyou/iterm-weather-component/blob/master/screenshots/ui1.png)
+
 ![ui2.png](https://github.com/takezyou/iterm-weather-component/blob/master/screenshots/ui2.png)
+
 ![ui3.png](https://github.com/takezyou/iterm-weather-component/blob/master/screenshots/ui3.png)
