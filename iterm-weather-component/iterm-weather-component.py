@@ -56,7 +56,7 @@ async def main(connection):
             return "☁️"
         elif icon_id == "09d" or icon_id == "09n":
             return "🌧"
-        elif icon_id == "10d" or icon_id == "02n":
+        elif icon_id == "10d" or icon_id == "10n":
             return "☔️"
         elif icon_id == "11d" or icon_id == "11n":
             return "⚡️"
