@@ -1,0 +1,11 @@
+libdispatch/__init__.py,sha256=n9Sx4CbhqFJAJNT-shSE2kTFQJkdTMukBnWhvUybKNw,816
+libdispatch/__pycache__/__init__.cpython-37.pyc,,
+libdispatch/__pycache__/_metadata.cpython-37.pyc,,
+libdispatch/_inlines.abi3.so,sha256=1-ocindBKZp9YNGcAM9rV0IQVaLd-8GLWHSmZijvGZg,9500
+libdispatch/_libdispatch.cpython-37m-darwin.so,sha256=F0lmRbFs8bdbgTX7FpF_g_M1Je9rdQZmY1yW6LN7_Gg,17320
+libdispatch/_metadata.py,sha256=FvKlOjLeAIKDUCjb_mdKC8tvJ445MYoVoPUT7DvQrak,23356
+pyobjc_framework_libdispatch-6.2.2.dist-info/INSTALLER,sha256=zuuue4knoyJ-UwPPXg8fezS7VCrXJQrAP7zeNuwvFQg,4
+pyobjc_framework_libdispatch-6.2.2.dist-info/METADATA,sha256=5qJ_dt4MHje0fQV-pQ6yPZbibMJWwd7LD0zg9KbdH4Y,2031
+pyobjc_framework_libdispatch-6.2.2.dist-info/RECORD,,
+pyobjc_framework_libdispatch-6.2.2.dist-info/WHEEL,sha256=ePSmKDYpHLRUYc6QuHiYMO-IoN8XmQMJmY2AHxzV4Bc,110
+pyobjc_framework_libdispatch-6.2.2.dist-info/top_level.txt,sha256=acyvxw3zEzXzfk9gVKXenaPAJF1MlJlQYiQEwKqvlM4,12

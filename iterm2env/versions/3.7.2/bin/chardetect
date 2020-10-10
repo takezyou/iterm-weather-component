@@ -1,4 +1,4 @@
-#!/Users/kaitoakita/Library/ApplicationSupport/iTerm2/Scripts/iterm-weather-component/iterm2env/versions/3.7.2/bin/python3
+#!/Users/david.herrera/.pyenv/versions/3.7.2/bin/python3.7
 
 # -*- coding: utf-8 -*-
 import re

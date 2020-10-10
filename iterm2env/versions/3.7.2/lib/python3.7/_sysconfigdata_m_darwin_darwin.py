@@ -8,30 +8,30 @@ build_time_vars = {'ABIFLAGS': 'm',
  'BASECFLAGS': '-Wno-unused-result -Wsign-compare -Wunreachable-code',
  'BASECPPFLAGS': '',
  'BASEMODLIBS': '',
- 'BINDIR': '/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/bin',
- 'BINLIBDEST': '/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/lib/python3.7',
+ 'BINDIR': '/Users/david.herrera/.pyenv/versions/3.7.2/bin',
+ 'BINLIBDEST': '/Users/david.herrera/.pyenv/versions/3.7.2/lib/python3.7',
  'BLDLIBRARY': 'libpython3.7m.a',
  'BLDSHARED': 'clang -bundle -undefined dynamic_lookup '
               '-L/usr/local/opt/readline/lib -L/usr/local/opt/readline/lib '
-              '-L/usr/local/opt/openssl/lib '
-              '-L/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/lib '
+              '-L/Users/david.herrera/.pyenv/versions/3.7.2/lib '
               '-L/usr/local/opt/readline/lib -L/usr/local/opt/readline/lib '
-              '-L/usr/local/opt/openssl/lib '
-              '-L/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/lib',
+              '-L/Users/david.herrera/.pyenv/versions/3.7.2/lib',
  'BUILDEXE': '.exe',
  'BUILDPYTHON': 'python.exe',
- 'BUILD_GNU_TYPE': 'x86_64-apple-darwin18.5.0',
+ 'BUILD_GNU_TYPE': 'x86_64-apple-darwin19.6.0',
  'BYTESTR_DEPS': '\\',
  'CC': 'clang',
  'CCSHARED': '',
  'CFLAGS': '-Wno-unused-result -Wsign-compare -Wunreachable-code -DNDEBUG -g '
-           '-fwrapv -O3 -Wall',
+           '-fwrapv -O3 -Wall '
+           '-I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include '
+           '-I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include',
  'CFLAGSFORSHARED': '',
  'CFLAGS_ALIASING': '-fno-strict-aliasing',
  'CFLAGS_NODIST': '',
  'CONFIGFILES': 'configure configure.ac acconfig.h pyconfig.h.in '
                 'Makefile.pre.in',
- 'CONFIGURE_CFLAGS': '',
+ 'CONFIGURE_CFLAGS': '-I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include',
  'CONFIGURE_CFLAGS_NODIST': '-std=c99 -Wextra -Wno-unused-result '
                             '-Wno-unused-parameter '
                             '-Wno-missing-field-initializers '
@@ -39,46 +39,43 @@ build_time_vars = {'ABIFLAGS': 'm',
                             '-Werror=implicit-function-declaration',
  'CONFIGURE_CPPFLAGS': '-I/usr/local/opt/readline/include '
                        '-I/usr/local/opt/readline/include '
-                       '-I/usr/local/opt/openssl/include '
-                       '-I/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/include',
+                       '-I/Users/david.herrera/.pyenv/versions/3.7.2/include',
  'CONFIGURE_LDFLAGS': '-L/usr/local/opt/readline/lib '
                       '-L/usr/local/opt/readline/lib '
-                      '-L/usr/local/opt/openssl/lib '
-                      '-L/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/lib',
+                      '-L/Users/david.herrera/.pyenv/versions/3.7.2/lib',
  'CONFIGURE_LDFLAGS_NODIST': '',
- 'CONFIG_ARGS': "'--prefix=/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2' "
-                "'--libdir=/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/lib' "
-                "'CC=clang' 'LDFLAGS=-L/usr/local/opt/readline/lib "
-                '-L/usr/local/opt/readline/lib -L/usr/local/opt/openssl/lib '
-                "-L/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/lib ' "
+ 'CONFIG_ARGS': "'--prefix=/Users/david.herrera/.pyenv/versions/3.7.2' "
+                "'--libdir=/Users/david.herrera/.pyenv/versions/3.7.2/lib' "
+                "'--with-openssl=/usr/local/opt/openssl@1.1' 'CC=clang' "
+                "'CFLAGS=-I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include  "
+                "' 'LDFLAGS=-L/usr/local/opt/readline/lib "
+                '-L/usr/local/opt/readline/lib '
+                "-L/Users/david.herrera/.pyenv/versions/3.7.2/lib ' "
                 "'CPPFLAGS=-I/usr/local/opt/readline/include "
                 '-I/usr/local/opt/readline/include '
-                '-I/usr/local/opt/openssl/include '
-                '-I/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/include '
-                "' 'PKG_CONFIG_PATH=/usr/local/opt/openssl/lib/pkgconfig/:'",
- 'CONFINCLUDEDIR': '/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/include',
- 'CONFINCLUDEPY': '/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/include/python3.7m',
+                "-I/Users/david.herrera/.pyenv/versions/3.7.2/include ' "
+                "'PKG_CONFIG_PATH=/usr/local/opt/openssl@1.1/lib/pkgconfig/:'",
+ 'CONFINCLUDEDIR': '/Users/david.herrera/.pyenv/versions/3.7.2/include',
+ 'CONFINCLUDEPY': '/Users/david.herrera/.pyenv/versions/3.7.2/include/python3.7m',
  'COREPYTHONPATH': '',
- 'COVERAGE_INFO': '/var/folders/3w/hzqhqgln1lx_zbp9klrml3hh0000gn/T/python-build.20190428232350.92350/Python-3.7.2/coverage.info',
- 'COVERAGE_REPORT': '/var/folders/3w/hzqhqgln1lx_zbp9klrml3hh0000gn/T/python-build.20190428232350.92350/Python-3.7.2/lcov-report',
+ 'COVERAGE_INFO': '/var/folders/3p/9xv_d97506d4zl1fy43yrty00000gp/T/python-build.20201009163835.83690/Python-3.7.2/coverage.info',
+ 'COVERAGE_REPORT': '/var/folders/3p/9xv_d97506d4zl1fy43yrty00000gp/T/python-build.20201009163835.83690/Python-3.7.2/lcov-report',
  'COVERAGE_REPORT_OPTIONS': '--no-branch-coverage --title "CPython lcov '
                             'report"',
  'CPPFLAGS': '-I. -I./Include -I/usr/local/opt/readline/include '
              '-I/usr/local/opt/readline/include '
-             '-I/usr/local/opt/openssl/include '
-             '-I/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/include '
+             '-I/Users/david.herrera/.pyenv/versions/3.7.2/include '
              '-I/usr/local/opt/readline/include '
              '-I/usr/local/opt/readline/include '
-             '-I/usr/local/opt/openssl/include '
-             '-I/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/include',
+             '-I/Users/david.herrera/.pyenv/versions/3.7.2/include',
  'CXX': 'clang++',
- 'DESTDIRS': '/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2 '
-             '/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/lib '
-             '/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/lib/python3.7 '
-             '/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/lib/python3.7/lib-dynload',
- 'DESTLIB': '/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/lib/python3.7',
+ 'DESTDIRS': '/Users/david.herrera/.pyenv/versions/3.7.2 '
+             '/Users/david.herrera/.pyenv/versions/3.7.2/lib '
+             '/Users/david.herrera/.pyenv/versions/3.7.2/lib/python3.7 '
+             '/Users/david.herrera/.pyenv/versions/3.7.2/lib/python3.7/lib-dynload',
+ 'DESTLIB': '/Users/david.herrera/.pyenv/versions/3.7.2/lib/python3.7',
  'DESTPATH': '',
- 'DESTSHARED': '/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/lib/python3.7/lib-dynload',
+ 'DESTSHARED': '/Users/david.herrera/.pyenv/versions/3.7.2/lib/python3.7/lib-dynload',
  'DFLAGS': '',
  'DIRMODE': 755,
  'DIST': 'README.rst ChangeLog configure configure.ac acconfig.h pyconfig.h.in '
@@ -487,7 +484,7 @@ build_time_vars = {'ABIFLAGS': 'm',
  'HAVE_UNISTD_H': 1,
  'HAVE_UNLINKAT': 1,
  'HAVE_UNSETENV': 1,
- 'HAVE_USABLE_WCHAR_T': 0,
+ 'HAVE_USABLE_WCHAR_T': 1,
  'HAVE_UTIL_H': 1,
  'HAVE_UTIMENSAT': 1,
  'HAVE_UTIMES': 1,
@@ -511,49 +508,45 @@ build_time_vars = {'ABIFLAGS': 'm',
  'HAVE_X509_VERIFY_PARAM_SET1_HOST': 1,
  'HAVE_ZLIB_COPY': 1,
  'HAVE__GETPTY': 0,
- 'HOST_GNU_TYPE': 'x86_64-apple-darwin18.5.0',
- 'INCLDIRSTOMAKE': '/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/include '
-                   '/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/include '
-                   '/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/include/python3.7m '
-                   '/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/include/python3.7m',
- 'INCLUDEDIR': '/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/include',
- 'INCLUDEPY': '/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/include/python3.7m',
- 'INSTALL': '/usr/local/bin/ginstall -c',
- 'INSTALL_DATA': '/usr/local/bin/ginstall -c -m 644',
- 'INSTALL_PROGRAM': '/usr/local/bin/ginstall -c',
- 'INSTALL_SCRIPT': '/usr/local/bin/ginstall -c',
- 'INSTALL_SHARED': '/usr/local/bin/ginstall -c -m 555',
+ 'HOST_GNU_TYPE': 'x86_64-apple-darwin19.6.0',
+ 'INCLDIRSTOMAKE': '/Users/david.herrera/.pyenv/versions/3.7.2/include '
+                   '/Users/david.herrera/.pyenv/versions/3.7.2/include '
+                   '/Users/david.herrera/.pyenv/versions/3.7.2/include/python3.7m '
+                   '/Users/david.herrera/.pyenv/versions/3.7.2/include/python3.7m',
+ 'INCLUDEDIR': '/Users/david.herrera/.pyenv/versions/3.7.2/include',
+ 'INCLUDEPY': '/Users/david.herrera/.pyenv/versions/3.7.2/include/python3.7m',
+ 'INSTALL': '/usr/bin/install -c',
+ 'INSTALL_DATA': '/usr/bin/install -c -m 644',
+ 'INSTALL_PROGRAM': '/usr/bin/install -c',
+ 'INSTALL_SCRIPT': '/usr/bin/install -c',
+ 'INSTALL_SHARED': '/usr/bin/install -c -m 555',
  'INSTSONAME': 'libpython3.7m.a',
  'IO_H': 'Modules/_io/_iomodule.h',
  'IO_OBJS': '\\',
  'LDCXXSHARED': 'clang++ -bundle -undefined dynamic_lookup',
  'LDFLAGS': '-L/usr/local/opt/readline/lib -L/usr/local/opt/readline/lib '
-            '-L/usr/local/opt/openssl/lib '
-            '-L/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/lib '
+            '-L/Users/david.herrera/.pyenv/versions/3.7.2/lib '
             '-L/usr/local/opt/readline/lib -L/usr/local/opt/readline/lib '
-            '-L/usr/local/opt/openssl/lib '
-            '-L/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/lib',
+            '-L/Users/david.herrera/.pyenv/versions/3.7.2/lib',
  'LDFLAGS_NODIST': '',
  'LDLAST': '',
  'LDLIBRARY': 'libpython3.7m.a',
  'LDLIBRARYDIR': '',
  'LDSHARED': 'clang -bundle -undefined dynamic_lookup '
              '-L/usr/local/opt/readline/lib -L/usr/local/opt/readline/lib '
-             '-L/usr/local/opt/openssl/lib '
-             '-L/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/lib '
+             '-L/Users/david.herrera/.pyenv/versions/3.7.2/lib '
              '-L/usr/local/opt/readline/lib -L/usr/local/opt/readline/lib '
-             '-L/usr/local/opt/openssl/lib '
-             '-L/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/lib',
+             '-L/Users/david.herrera/.pyenv/versions/3.7.2/lib',
  'LDVERSION': '3.7m',
  'LIBC': '',
- 'LIBDEST': '/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/lib/python3.7',
- 'LIBDIR': '/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/lib',
+ 'LIBDEST': '/Users/david.herrera/.pyenv/versions/3.7.2/lib/python3.7',
+ 'LIBDIR': '/Users/david.herrera/.pyenv/versions/3.7.2/lib',
  'LIBFFI_INCLUDEDIR': '',
  'LIBM': '',
  'LIBOBJDIR': 'Python/',
  'LIBOBJS': '',
- 'LIBPC': '/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/lib/pkgconfig',
- 'LIBPL': '/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/lib/python3.7/config-3.7m-darwin',
+ 'LIBPC': '/Users/david.herrera/.pyenv/versions/3.7.2/lib/pkgconfig',
+ 'LIBPL': '/Users/david.herrera/.pyenv/versions/3.7.2/lib/python3.7/config-3.7m-darwin',
  'LIBRARY': 'libpython3.7m.a',
  'LIBRARY_OBJS': '\\',
  'LIBRARY_OBJS_OMIT_FROZEN': '\\',
@@ -571,14 +564,14 @@ build_time_vars = {'ABIFLAGS': 'm',
  'LOG1P_DROPS_ZERO_SIGN': 0,
  'MACHDEP': 'darwin',
  'MACHDEP_OBJS': '',
- 'MACHDESTLIB': '/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/lib/python3.7',
- 'MACOSX_DEPLOYMENT_TARGET': '10.14',
+ 'MACHDESTLIB': '/Users/david.herrera/.pyenv/versions/3.7.2/lib/python3.7',
+ 'MACOSX_DEPLOYMENT_TARGET': '10.15',
  'MAINCC': 'clang',
  'MAJOR_IN_MKDEV': 0,
  'MAJOR_IN_SYSMACROS': 0,
  'MAKESETUP': './Modules/makesetup',
- 'MANDIR': '/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/share/man',
- 'MKDIR_P': '/usr/local/bin/gmkdir -p',
+ 'MANDIR': '/Users/david.herrera/.pyenv/versions/3.7.2/share/man',
+ 'MKDIR_P': './install-sh -c -d',
  'MODBUILT_NAMES': 'posix  errno  pwd  _sre  _codecs  _weakref  _functools  '
                    '_operator  _collections  _abc  itertools  atexit  _signal  '
                    '_stat  time  _thread  _locale  _io  zipimport  '
@@ -604,8 +597,8 @@ build_time_vars = {'ABIFLAGS': 'm',
  'MVWDELCH_IS_EXPRESSION': 1,
  'NO_AS_NEEDED': '',
  'OBJECT_OBJS': '\\',
- 'OPENSSL_INCLUDES': '-I/usr/local/Cellar/openssl/1.0.2q/include',
- 'OPENSSL_LDFLAGS': '-L/usr/local/Cellar/openssl/1.0.2q/lib',
+ 'OPENSSL_INCLUDES': '-I/usr/local/opt/openssl@1.1/include',
+ 'OPENSSL_LDFLAGS': '-L/usr/local/opt/openssl@1.1/lib',
  'OPENSSL_LIBS': '-lssl -lcrypto',
  'OPT': '-DNDEBUG -g -fwrapv -O3 -Wall',
  'OTHER_LIBTOOL_OPT': '',
@@ -626,7 +619,7 @@ build_time_vars = {'ABIFLAGS': 'm',
  'POSIX_SEMAPHORES_NOT_ENABLED': 0,
  'PROFILE_TASK': '-m test.regrtest --pgo',
  'PTHREAD_KEY_T_IS_COMPATIBLE_WITH_INT': 0,
- 'PTHREAD_SYSTEM_SCHED_SUPPORTED': 1,
+ 'PTHREAD_SYSTEM_SCHED_SUPPORTED': 0,
  'PURIFY': '',
  'PY3LIBRARY': '',
  'PYLONG_BITS_IN_DIGIT': 0,
@@ -637,11 +630,13 @@ build_time_vars = {'ABIFLAGS': 'm',
  'PYTHONFRAMEWORKPREFIX': '',
  'PYTHONPATH': '',
  'PYTHON_FOR_BUILD': './python.exe -E',
- 'PYTHON_FOR_REGEN': 'python3.7',
+ 'PYTHON_FOR_REGEN': 'python3',
  'PYTHON_HEADERS': '\\',
  'PYTHON_OBJS': '\\',
  'PY_BUILTIN_MODULE_CFLAGS': '-Wno-unused-result -Wsign-compare '
                              '-Wunreachable-code -DNDEBUG -g -fwrapv -O3 -Wall '
+                             '-I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include '
+                             '-I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include '
                              '-std=c99 -Wextra -Wno-unused-result '
                              '-Wno-unused-parameter '
                              '-Wno-missing-field-initializers '
@@ -649,73 +644,68 @@ build_time_vars = {'ABIFLAGS': 'm',
                              '-Werror=implicit-function-declaration -I. '
                              '-I./Include -I/usr/local/opt/readline/include '
                              '-I/usr/local/opt/readline/include '
-                             '-I/usr/local/opt/openssl/include '
-                             '-I/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/include '
+                             '-I/Users/david.herrera/.pyenv/versions/3.7.2/include '
                              '-I/usr/local/opt/readline/include '
                              '-I/usr/local/opt/readline/include '
-                             '-I/usr/local/opt/openssl/include '
-                             '-I/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/include '
+                             '-I/Users/david.herrera/.pyenv/versions/3.7.2/include '
                              '-DPy_BUILD_CORE_BUILTIN',
  'PY_CFLAGS': '-Wno-unused-result -Wsign-compare -Wunreachable-code -DNDEBUG '
-              '-g -fwrapv -O3 -Wall',
+              '-g -fwrapv -O3 -Wall '
+              '-I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include '
+              '-I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include',
  'PY_CFLAGS_NODIST': '-std=c99 -Wextra -Wno-unused-result '
                      '-Wno-unused-parameter -Wno-missing-field-initializers '
                      '-Wstrict-prototypes '
                      '-Werror=implicit-function-declaration',
  'PY_COERCE_C_LOCALE': 1,
  'PY_CORE_CFLAGS': '-Wno-unused-result -Wsign-compare -Wunreachable-code '
-                   '-DNDEBUG -g -fwrapv -O3 -Wall -std=c99 -Wextra '
-                   '-Wno-unused-result -Wno-unused-parameter '
+                   '-DNDEBUG -g -fwrapv -O3 -Wall '
+                   '-I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include '
+                   '-I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include '
+                   '-std=c99 -Wextra -Wno-unused-result -Wno-unused-parameter '
                    '-Wno-missing-field-initializers -Wstrict-prototypes '
                    '-Werror=implicit-function-declaration -I. -I./Include '
                    '-I/usr/local/opt/readline/include '
                    '-I/usr/local/opt/readline/include '
-                   '-I/usr/local/opt/openssl/include '
-                   '-I/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/include '
+                   '-I/Users/david.herrera/.pyenv/versions/3.7.2/include '
                    '-I/usr/local/opt/readline/include '
                    '-I/usr/local/opt/readline/include '
-                   '-I/usr/local/opt/openssl/include '
-                   '-I/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/include '
+                   '-I/Users/david.herrera/.pyenv/versions/3.7.2/include '
                    '-DPy_BUILD_CORE',
  'PY_CORE_LDFLAGS': '-L/usr/local/opt/readline/lib '
                     '-L/usr/local/opt/readline/lib '
-                    '-L/usr/local/opt/openssl/lib '
-                    '-L/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/lib '
+                    '-L/Users/david.herrera/.pyenv/versions/3.7.2/lib '
                     '-L/usr/local/opt/readline/lib '
                     '-L/usr/local/opt/readline/lib '
-                    '-L/usr/local/opt/openssl/lib '
-                    '-L/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/lib',
+                    '-L/Users/david.herrera/.pyenv/versions/3.7.2/lib',
  'PY_CPPFLAGS': '-I. -I./Include -I/usr/local/opt/readline/include '
                 '-I/usr/local/opt/readline/include '
-                '-I/usr/local/opt/openssl/include '
-                '-I/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/include '
+                '-I/Users/david.herrera/.pyenv/versions/3.7.2/include '
                 '-I/usr/local/opt/readline/include '
                 '-I/usr/local/opt/readline/include '
-                '-I/usr/local/opt/openssl/include '
-                '-I/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/include',
+                '-I/Users/david.herrera/.pyenv/versions/3.7.2/include',
  'PY_FORMAT_SIZE_T': '"z"',
  'PY_LDFLAGS': '-L/usr/local/opt/readline/lib -L/usr/local/opt/readline/lib '
-               '-L/usr/local/opt/openssl/lib '
-               '-L/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/lib '
+               '-L/Users/david.herrera/.pyenv/versions/3.7.2/lib '
                '-L/usr/local/opt/readline/lib -L/usr/local/opt/readline/lib '
-               '-L/usr/local/opt/openssl/lib '
-               '-L/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/lib',
+               '-L/Users/david.herrera/.pyenv/versions/3.7.2/lib',
  'PY_LDFLAGS_NODIST': '',
  'PY_SSL_DEFAULT_CIPHERS': 1,
  'PY_SSL_DEFAULT_CIPHER_STRING': 0,
  'PY_STDMODULE_CFLAGS': '-Wno-unused-result -Wsign-compare -Wunreachable-code '
-                        '-DNDEBUG -g -fwrapv -O3 -Wall -std=c99 -Wextra '
-                        '-Wno-unused-result -Wno-unused-parameter '
-                        '-Wno-missing-field-initializers -Wstrict-prototypes '
+                        '-DNDEBUG -g -fwrapv -O3 -Wall '
+                        '-I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include '
+                        '-I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include '
+                        '-std=c99 -Wextra -Wno-unused-result '
+                        '-Wno-unused-parameter -Wno-missing-field-initializers '
+                        '-Wstrict-prototypes '
                         '-Werror=implicit-function-declaration -I. -I./Include '
                         '-I/usr/local/opt/readline/include '
                         '-I/usr/local/opt/readline/include '
-                        '-I/usr/local/opt/openssl/include '
-                        '-I/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/include '
+                        '-I/Users/david.herrera/.pyenv/versions/3.7.2/include '
                         '-I/usr/local/opt/readline/include '
                         '-I/usr/local/opt/readline/include '
-                        '-I/usr/local/opt/openssl/include '
-                        '-I/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/include',
+                        '-I/Users/david.herrera/.pyenv/versions/3.7.2/include',
  'Py_DEBUG': 0,
  'Py_ENABLE_SHARED': 0,
  'Py_HASH_ALGORITHM': 0,
@@ -724,13 +714,13 @@ build_time_vars = {'ABIFLAGS': 'm',
  'RESSRCDIR': 'Mac/Resources/framework',
  'RETSIGTYPE': 'void',
  'RUNSHARED': '',
- 'SCRIPTDIR': '/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/lib',
+ 'SCRIPTDIR': '/Users/david.herrera/.pyenv/versions/3.7.2/lib',
  'SETPGRP_HAVE_ARG': 0,
  'SGI_ABI': '@SGI_ABI@',
  'SHELL': '/bin/sh',
  'SHLIBS': '-ldl  -framework CoreFoundation',
  'SHLIB_SUFFIX': '.so',
- 'SIGNED_RIGHT_SHIFT_ZERO_FILLS': 0,
+ 'SIGNED_RIGHT_SHIFT_ZERO_FILLS': 1,
  'SITEPATH': '',
  'SIZEOF_DOUBLE': 8,
  'SIZEOF_FLOAT': 4,
@@ -774,7 +764,7 @@ build_time_vars = {'ABIFLAGS': 'm',
  'TM_IN_SYS_TIME': 0,
  'UNICODE_DEPS': '\\',
  'UNIVERSALSDK': '',
- 'UPDATE_FILE': 'python3.7 ./Tools/scripts/update_file.py',
+ 'UPDATE_FILE': 'python3 ./Tools/scripts/update_file.py',
  'USE_COMPUTED_GOTOS': 0,
  'VERSION': '3.7',
  'WINDOW_HAS_FLAGS': 1,
@@ -787,9 +777,9 @@ build_time_vars = {'ABIFLAGS': 'm',
  'WITH_VALGRIND': 0,
  'X87_DOUBLE_ROUNDING': 0,
  'XMLLIBSUBDIRS': 'xml xml/dom xml/etree xml/parsers xml/sax',
- 'abs_builddir': '/var/folders/3w/hzqhqgln1lx_zbp9klrml3hh0000gn/T/python-build.20190428232350.92350/Python-3.7.2',
- 'abs_srcdir': '/var/folders/3w/hzqhqgln1lx_zbp9klrml3hh0000gn/T/python-build.20190428232350.92350/Python-3.7.2',
- 'datarootdir': '/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/share',
- 'exec_prefix': '/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2',
- 'prefix': '/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2',
+ 'abs_builddir': '/var/folders/3p/9xv_d97506d4zl1fy43yrty00000gp/T/python-build.20201009163835.83690/Python-3.7.2',
+ 'abs_srcdir': '/var/folders/3p/9xv_d97506d4zl1fy43yrty00000gp/T/python-build.20201009163835.83690/Python-3.7.2',
+ 'datarootdir': '/Users/david.herrera/.pyenv/versions/3.7.2/share',
+ 'exec_prefix': '/Users/david.herrera/.pyenv/versions/3.7.2',
+ 'prefix': '/Users/david.herrera/.pyenv/versions/3.7.2',
  'srcdir': '.'}

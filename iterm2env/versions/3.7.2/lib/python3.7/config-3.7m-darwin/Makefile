@@ -30,8 +30,8 @@ MODLIBS=           $(LOCALMODLIBS) $(BASEMODLIBS)
 VERSION=	3.7
 srcdir=		.
 
-abs_srcdir=	/var/folders/3w/hzqhqgln1lx_zbp9klrml3hh0000gn/T/python-build.20190428232350.92350/Python-3.7.2
-abs_builddir=	/var/folders/3w/hzqhqgln1lx_zbp9klrml3hh0000gn/T/python-build.20190428232350.92350/Python-3.7.2
+abs_srcdir=	/var/folders/3p/9xv_d97506d4zl1fy43yrty00000gp/T/python-build.20201009163835.83690/Python-3.7.2
+abs_builddir=	/var/folders/3p/9xv_d97506d4zl1fy43yrty00000gp/T/python-build.20201009163835.83690/Python-3.7.2
 
 
 CC=		clang
@@ -64,7 +64,7 @@ SHELL=		/bin/sh
 LN=		ln
 
 # Portable install script (configure doesn't always guess right)
-INSTALL=	/usr/local/bin/ginstall -c
+INSTALL=	/usr/bin/install -c
 INSTALL_PROGRAM=${INSTALL}
 INSTALL_SCRIPT= ${INSTALL}
 INSTALL_DATA=	${INSTALL} -m 644
@@ -73,7 +73,7 @@ INSTALL_DATA=	${INSTALL} -m 644
 # Also, making them read-only seems to be a good idea...
 INSTALL_SHARED= ${INSTALL} -m 555
 
-MKDIR_P=	/usr/local/bin/gmkdir -p
+MKDIR_P=	./install-sh -c -d
 
 MAKESETUP=      $(srcdir)/Modules/makesetup
 
@@ -81,7 +81,7 @@ MAKESETUP=      $(srcdir)/Modules/makesetup
 OPT=		-DNDEBUG -g -fwrapv -O3 -Wall
 BASECFLAGS=	 -Wno-unused-result -Wsign-compare -Wunreachable-code
 BASECPPFLAGS=	
-CONFIGURE_CFLAGS=	
+CONFIGURE_CFLAGS=	-I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include  
 # CFLAGS_NODIST is used for building the interpreter and stdlib C extensions.
 # Use it when a compiler flag should _not_ be part of the distutils CFLAGS
 # once Python is installed (Issue #21121).
@@ -90,8 +90,8 @@ CONFIGURE_CFLAGS_NODIST= -std=c99 -Wextra -Wno-unused-result -Wno-unused-paramet
 # Use it when a linker flag should _not_ be part of the distutils LDFLAGS
 # once Python is installed (bpo-35257)
 CONFIGURE_LDFLAGS_NODIST=
-CONFIGURE_CPPFLAGS=	-I/usr/local/opt/readline/include -I/usr/local/opt/readline/include -I/usr/local/opt/openssl/include -I/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/include 
-CONFIGURE_LDFLAGS=	-L/usr/local/opt/readline/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/openssl/lib -L/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/lib 
+CONFIGURE_CPPFLAGS=	-I/usr/local/opt/readline/include -I/usr/local/opt/readline/include -I/Users/david.herrera/.pyenv/versions/3.7.2/include 
+CONFIGURE_LDFLAGS=	-L/usr/local/opt/readline/lib -L/usr/local/opt/readline/lib -L/Users/david.herrera/.pyenv/versions/3.7.2/lib 
 # Avoid assigning CFLAGS, LDFLAGS, etc. so users can use them on the
 # command line to append to these values without stomping the pre-set
 # values.
@@ -129,7 +129,7 @@ MULTIARCH=	darwin
 MULTIARCH_CPPFLAGS = -DMULTIARCH=\"darwin\"
 
 # Install prefix for architecture-independent files
-prefix=		/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2
+prefix=		/Users/david.herrera/.pyenv/versions/3.7.2
 
 # Install prefix for architecture-dependent files
 exec_prefix=	${prefix}
@@ -139,7 +139,7 @@ datarootdir=    ${prefix}/share
 
 # Expanded directories
 BINDIR=		${exec_prefix}/bin
-LIBDIR=		/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/lib
+LIBDIR=		/Users/david.herrera/.pyenv/versions/3.7.2/lib
 MANDIR=		${datarootdir}/man
 INCLUDEDIR=	${prefix}/include
 CONFINCLUDEDIR=	$(exec_prefix)/include
@@ -173,7 +173,7 @@ PYTHONFRAMEWORKINSTALLDIR=
 # Deployment target selected during configure, to be checked
 # by distutils. The export statement is needed to ensure that the
 # deployment target is active during build.
-MACOSX_DEPLOYMENT_TARGET=10.14
+MACOSX_DEPLOYMENT_TARGET=10.15
 export MACOSX_DEPLOYMENT_TARGET
 
 # Option to install to strip binaries
@@ -192,9 +192,9 @@ RUNSHARED=
 ENSUREPIP=      upgrade
 
 # OpenSSL options for setup.py so sysconfig can pick up AC_SUBST() vars.
-OPENSSL_INCLUDES=-I/usr/local/Cellar/openssl/1.0.2q/include
+OPENSSL_INCLUDES=-I/usr/local/opt/openssl@1.1/include
 OPENSSL_LIBS=-lssl -lcrypto
-OPENSSL_LDFLAGS=-L/usr/local/Cellar/openssl/1.0.2q/lib
+OPENSSL_LDFLAGS=-L/usr/local/opt/openssl@1.1/lib
 
 # Modes for directories, executables and data files created by the
 # install process.  Default to user-only-writable for all file types.
@@ -203,7 +203,7 @@ EXEMODE=	755
 FILEMODE=	644
 
 # configure script arguments
-CONFIG_ARGS=	 '--prefix=/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2' '--libdir=/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/lib' 'CC=clang' 'LDFLAGS=-L/usr/local/opt/readline/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/openssl/lib -L/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/lib ' 'CPPFLAGS=-I/usr/local/opt/readline/include -I/usr/local/opt/readline/include -I/usr/local/opt/openssl/include -I/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/include ' 'PKG_CONFIG_PATH=/usr/local/opt/openssl/lib/pkgconfig/:'
+CONFIG_ARGS=	 '--prefix=/Users/david.herrera/.pyenv/versions/3.7.2' '--libdir=/Users/david.herrera/.pyenv/versions/3.7.2/lib' '--with-openssl=/usr/local/opt/openssl@1.1' 'CC=clang' 'CFLAGS=-I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include  ' 'LDFLAGS=-L/usr/local/opt/readline/lib -L/usr/local/opt/readline/lib -L/Users/david.herrera/.pyenv/versions/3.7.2/lib ' 'CPPFLAGS=-I/usr/local/opt/readline/include -I/usr/local/opt/readline/include -I/Users/david.herrera/.pyenv/versions/3.7.2/include ' 'PKG_CONFIG_PATH=/usr/local/opt/openssl@1.1/lib/pkgconfig/:'
 
 
 # Subdirectories with code
@@ -243,12 +243,12 @@ LIBOBJS=
 PYTHON=		python$(EXE)
 BUILDPYTHON=	python$(BUILDEXE)
 
-PYTHON_FOR_REGEN=python3.7
-UPDATE_FILE=python3.7 $(srcdir)/Tools/scripts/update_file.py
+PYTHON_FOR_REGEN=python3
+UPDATE_FILE=python3 $(srcdir)/Tools/scripts/update_file.py
 PYTHON_FOR_BUILD=./$(BUILDPYTHON) -E
 _PYTHON_HOST_PLATFORM=
-BUILD_GNU_TYPE=	x86_64-apple-darwin18.5.0
-HOST_GNU_TYPE=	x86_64-apple-darwin18.5.0
+BUILD_GNU_TYPE=	x86_64-apple-darwin19.6.0
+HOST_GNU_TYPE=	x86_64-apple-darwin19.6.0
 
 # Tcl and Tk config info from --with-tcltk-includes and -libs options
 TCLTK_INCLUDES=	

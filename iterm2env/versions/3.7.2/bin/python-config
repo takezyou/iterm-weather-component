@@ -1,4 +1,4 @@
-#!/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/bin/python3.7m
+#!/Users/david.herrera/.pyenv/versions/3.7.2/bin/python3.7m
 # -*- python -*-
 
 # Keep this script in sync with python-config.sh.in

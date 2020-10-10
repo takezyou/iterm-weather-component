@@ -1,4 +1,4 @@
-#!/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/bin/python3.7
+#!/Users/david.herrera/.pyenv/versions/3.7.2/bin/python3.7
 if __name__ == '__main__':
     import sys
     import pathlib

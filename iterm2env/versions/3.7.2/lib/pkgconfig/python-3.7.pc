@@ -1,7 +1,7 @@
 # See: man pkg-config
-prefix=/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2
+prefix=/Users/david.herrera/.pyenv/versions/3.7.2
 exec_prefix=${prefix}
-libdir=/Users/kaitoakita/Library/ApplicationSupport/iTerm2/iterm2env-47/versions/3.7.2/lib
+libdir=/Users/david.herrera/.pyenv/versions/3.7.2/lib
 includedir=${prefix}/include
 
 Name: Python
