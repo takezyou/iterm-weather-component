@@ -33,3 +33,10 @@ If you want other information please check
 ![ui2.png](https://github.com/takezyou/iterm-weather-component/blob/master/screenshots/ui2.png)
 
 ![ui3.png](https://github.com/takezyou/iterm-weather-component/blob/master/screenshots/ui3.png)
+
+## Uninstall
+
+Make sure to remove it from your status bar
+```
+./uninstall.sh
+```
